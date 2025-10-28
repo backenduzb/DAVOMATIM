@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin ro‘yxatdan o‘tish</title>
+</head>
+<body>
+    <h2>Register</h2>
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+    <form method="post" action="/auth/register">
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br>
+        <label>Confirm Password:</label><br>
+        <input type="password" name="confirm_password" required><br><br>
+        <button type="submit">Register</button>
+    </form>
+    <p><a href="/auth/login">Login sahifasiga o‘tish</a></p>
+</body>
+</html>

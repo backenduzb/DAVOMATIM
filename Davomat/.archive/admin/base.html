@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Davomat tizimi</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f3f5f9;
+      color: #2e3a4e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    header {
+      background: linear-gradient(90deg, #2563eb, #1e40af);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    header button {
+      background: rgba(255,255,255,0.2);
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    header button:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    main {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    /* Stat cards */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      padding: 25px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+    }
+    .card h3 {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+    .card h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1e3a8a;
+    }
+
+    .charts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 25px;
+    }
+
+    .chart-card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    .chart-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📊 Davomat Tizimi — Admin Panel</h1>
+    <button>Chiqish</button>
+  </header>
+
+  <main>
+    <!-- Stat cards -->
+    <section class="stats">
+      <div class="card" style="border-left: 6px solid #2563eb;">
+        <h3>Jami o‘quvchilar</h3>
+        <h2 id="total">542</h2>
+      </div>
+      <div class="card" style="border-left: 6px solid #16a34a;">
+        <h3>Kelganlar</h3>
+        <h2 id="present">487</h2>
+      </div>
+      <div class="card" style="border-left: 6px solid #dc2626;">
+        <h3>Kelmaganlar</h3>
+        <h2 id="absent">55</h2>
+      </div>
+      <div class="card" style="border-left: 6px solid #f59e0b;">
+        <h3>Bugungi davom %</h3>
+        <h2>89%</h2>
+      </div>
+    </section>
+
+    <!-- Charts -->
+    <section class="charts">
+      <div class="chart-card">
+        <h3>📈 Sinflar bo‘yicha kelganlar foizi</h3>
+        <canvas id="classChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>🧭 Umumiy davomat taqsimoti</h3>
+        <canvas id="pieChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Davomat tizimi | Barcha huquqlar himoyalangan</footer>
+
+  <script>
+    // Sinflar bo‘yicha bar chart
+    const ctx1 = document.getElementById('classChart');
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['5-A', '6-B', '7-A', '8-C', '9-A', '10-B'],
+        datasets: [{
+          label: 'Kelganlar (%)',
+          data: [92, 85, 88, 94, 80, 87],
+          backgroundColor: '#2563eb',
+          borderRadius: 10
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { color: '#475569' },
+            grid: { color: '#e2e8f0' }
+          },
+          x: {
+            ticks: { color: '#475569' },
+            grid: { display: false }
+          }
+        },
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+
+    // Pie chart
+    const ctx2 = document.getElementById('pieChart');
+    new Chart(ctx2, {
+      type: 'doughnut',
+      data: {
+        labels: ['Kelganlar', 'Kelmaganlar'],
+        datasets: [{
+          data: [487, 55],
+          backgroundColor: ['#16a34a', '#dc2626']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom', labels: { color: '#475569' } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

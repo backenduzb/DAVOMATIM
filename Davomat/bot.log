@@ -1,0 +1,48 @@
+2025-10-28 14:44:45,012 - [ERROR] - bot.main - ---------------------------------------------------------------------------------------------------------
+2025-10-28 14:44:45,012 - [INFO] - bot.main - 🤖 Bot ishga tushmoqda...
+2025-10-28 14:44:45,012 - [INFO] - aiogram.dispatcher - Start polling
+2025-10-28 14:44:45,470 - [INFO] - aiogram.dispatcher - Run polling for bot @ktim_davomat_bot id=7102026834 - "KTIM yo'qlama"
+2025-10-28 14:44:45,636 - [INFO] - aiogram.event - Update id=498948002 is not handled. Duration 1 ms by bot id=7102026834
+2025-10-28 14:45:00,990 - [INFO] - aiogram.event - Update id=498948003 is handled. Duration 2428 ms by bot id=7102026834
+2025-10-28 14:46:34,549 - [INFO] - aiogram.event - Update id=498948004 is handled. Duration 189 ms by bot id=7102026834
+2025-10-28 14:46:36,145 - [INFO] - aiogram.event - Update id=498948005 is handled. Duration 300 ms by bot id=7102026834
+2025-10-28 14:46:45,727 - [INFO] - aiogram.event - Update id=498948006 is handled. Duration 314 ms by bot id=7102026834
+2025-10-28 14:46:47,005 - [INFO] - aiogram.event - Update id=498948007 is handled. Duration 308 ms by bot id=7102026834
+2025-10-28 14:46:48,756 - [INFO] - aiogram.event - Update id=498948008 is handled. Duration 270 ms by bot id=7102026834
+2025-10-28 14:46:50,363 - [INFO] - aiogram.event - Update id=498948009 is handled. Duration 296 ms by bot id=7102026834
+2025-10-28 14:46:51,196 - [INFO] - aiogram.event - Update id=498948010 is handled. Duration 139 ms by bot id=7102026834
+2025-10-28 14:46:52,867 - [INFO] - aiogram.event - Update id=498948011 is handled. Duration 141 ms by bot id=7102026834
+2025-10-28 14:46:56,274 - [INFO] - aiogram.event - Update id=498948012 is handled. Duration 431 ms by bot id=7102026834
+2025-10-28 14:46:59,200 - [INFO] - aiogram.event - Update id=498948013 is handled. Duration 160 ms by bot id=7102026834
+2025-10-28 14:47:01,198 - [INFO] - aiogram.event - Update id=498948014 is handled. Duration 326 ms by bot id=7102026834
+2025-10-28 14:47:03,205 - [INFO] - aiogram.event - Update id=498948015 is handled. Duration 365 ms by bot id=7102026834
+2025-10-28 14:47:06,846 - [INFO] - aiogram.event - Update id=498948016 is handled. Duration 505 ms by bot id=7102026834
+2025-10-28 15:04:49,918 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-10-28 15:04:49,919 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7102026834)
+2025-10-28 15:05:01,271 - [INFO] - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7102026834)
+2025-10-28 15:06:11,908 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-10-28 15:06:11,908 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7102026834)
+2025-10-28 15:06:23,365 - [INFO] - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7102026834)
+2025-10-28 15:06:34,264 - [ERROR] - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 104] Connection reset by peer
+2025-10-28 15:06:34,264 - [WARNING] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7102026834)
+2025-10-28 15:06:45,705 - [INFO] - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7102026834)
+2025-10-28 15:20:14,654 - [WARNING] - aiogram.dispatcher - Received SIGINT signal
+2025-10-28 15:20:14,655 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ktim_davomat_bot id=7102026834 - "KTIM yo'qlama"
+2025-10-28 15:20:14,655 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-10-28 15:20:14,838 - [WARNING] - aiogram.dispatcher - Received SIGINT signal
+2025-10-28 15:20:14,907 - [INFO] - bot.main - 🛑 Bot to‘xtatildi.
+2025-10-28 15:20:14,907 - [ERROR] - bot.main - ---------------------------------------------------------------------------------------------------------
+2025-10-28 15:49:43,769 - [ERROR] - bot.main - ---------------------------------------------------------------------------------------------------------
+2025-10-28 15:49:43,770 - [INFO] - bot.main - 🤖 Bot ishga tushmoqda...
+2025-10-28 15:49:43,770 - [INFO] - aiogram.dispatcher - Start polling
+2025-10-28 15:49:44,167 - [INFO] - aiogram.dispatcher - Run polling for bot @ktim_davomat_bot id=7102026834 - "KTIM yo'qlama"
+2025-10-28 15:49:45,552 - [INFO] - aiogram.event - Update id=498948017 is handled. Duration 1263 ms by bot id=7102026834
+2025-10-28 15:49:45,592 - [INFO] - aiogram.event - Update id=498948018 is handled. Duration 1301 ms by bot id=7102026834
+2025-10-28 15:49:45,621 - [INFO] - aiogram.event - Update id=498948019 is handled. Duration 1330 ms by bot id=7102026834
+2025-10-28 15:49:45,653 - [INFO] - aiogram.event - Update id=498948020 is handled. Duration 1361 ms by bot id=7102026834
+2025-10-28 15:49:45,686 - [INFO] - aiogram.event - Update id=498948021 is handled. Duration 1394 ms by bot id=7102026834
+2025-10-28 15:49:53,624 - [WARNING] - aiogram.dispatcher - Received SIGINT signal
+2025-10-28 15:49:53,631 - [INFO] - aiogram.dispatcher - Polling stopped for bot @ktim_davomat_bot id=7102026834 - "KTIM yo'qlama"
+2025-10-28 15:49:53,631 - [INFO] - aiogram.dispatcher - Polling stopped
+2025-10-28 15:49:53,883 - [INFO] - bot.main - 🛑 Bot to‘xtatildi.
+2025-10-28 15:49:53,884 - [ERROR] - bot.main - ---------------------------------------------------------------------------------------------------------
