@@ -2,8 +2,11 @@ import asyncio
 import logging
 import os
 import django
+import sys
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Davomat.settings")
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+
 django.setup() 
 
 from aiogram import Bot, Dispatcher
